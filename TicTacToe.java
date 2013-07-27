@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * CSE 3521 Project 2<br>
  * Created 4/5/2013<br>
@@ -15,6 +17,16 @@ public class TicTacToe {
 		TTTBoard game1, game2;
 		TTTAgent mP1, mP2, hP1, hP2;
 		
+		// HUMAN AGENT VS MINIMAX TEST
+		TTTBoard game0;
+		TTTAgent x1, x2;
+		System.out.println("TEST GAME");
+		game0 = new TTTBoard();
+		Scanner sc = new Scanner(System.in);
+		x1 = new HumanAgent(1, sc);
+		x2 = new MinimaxAgent(2);
+		playGame(game0, x1, x2);
+		sc.close();
 		
 		/* * * * * * * * * * *
 		 * GAME 1 - MINIMAX  *
