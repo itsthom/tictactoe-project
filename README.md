@@ -6,7 +6,7 @@ AI players.
 One player class uses Minimax search to explore the entire game space, and the 
 other uses a limited-depth Minimax search with a heuristic function.
 
-TO DO, maybe, if I feel like it:
+TO DO (maybe):
  - Add a human player class
- - Draw the board
+ - Some kind of menu for setting up games
  - make GUI
