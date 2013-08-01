@@ -8,7 +8,6 @@ import java.util.Scanner;
 public class HumanAgent implements TTTAgent {
 	
 	private int player;
-	private int opponent;
 	private Scanner ins;
 	
 	/**
@@ -17,8 +16,6 @@ public class HumanAgent implements TTTAgent {
 	 */
 	public HumanAgent(int player, Scanner sc) {
 		this.player = player;
-		if (player == 1) this.opponent = 2;
-		else this.opponent = 1;
 		this.ins = sc;
 	}
 	
@@ -28,7 +25,6 @@ public class HumanAgent implements TTTAgent {
 	 * @return the square player chooses to mark
 	 */
 	public int getMove(TTTBoard game) {
-		
 		int move = -1;
 		
 		if (this.player == 1) System.out.println("You are X.");
