@@ -1,12 +1,12 @@
-import javax.swing.*;
-import java.awt.event.*;
-
 
 /**
- * Provides GUI for Tic Tac Toe game
+ * Executes a GUI version of the Tic Tac Toe game
  * @author Tom Gleghorn
  *
  */
 public class TicTacToeGUI {
 	
+	public static void main(String[] args) {
+		PlayerSelectFrame playerSelect = new PlayerSelectFrame();
+	}
 }
